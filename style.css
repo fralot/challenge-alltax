@@ -1,0 +1,47 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+* {
+    --line-chart-stroke: #0079C2;
+    --line-chart-stroke-positive: #388E3C;
+    --line-chart-stroke-negative: #FF5722;
+    --line-chart-grid: #777777;
+    --border-colorboard: #D2D2D2;
+    --text-main: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --background-body: #1D1D1D;
+    --text-main: #EEEEEE;
+    --line-chart-grid: #A5A5A5;
+
+  }
+}
+
+.select-filter-container {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+
+    @media  (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.chart {
+    width: 80%;
+    height: 375px;
+    margin: 0 auto;
+}

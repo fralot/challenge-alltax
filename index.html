@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Produts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>Rating Produts</h1>
+
+    <div class="select-filter-container">
+        <div>
+            <label for="category">Category:</label>
+            <select name="category" id="category">
+            </select>
+        </div>
+        
+        <div>
+            <label for="brand">Brand:</label>
+            <select name="brand" id="brand">
+            </select>
+        </div>
+
+        <div>
+            <label for="brand">Reviews:</label>
+            <select name="reviews" id="reviews">
+                <option value="All">All</option>
+                <option value="Positive">Positive</option>
+                <option value="Negative">Negative</option>
+            </select>
+        </div>
+    </div>
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
